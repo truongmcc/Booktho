@@ -23,6 +23,9 @@
 		D9B3D4002073A64500BDC55C /* ProfilController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9B3D3FF2073A64500BDC55C /* ProfilController.swift */; };
 		D9B3D4022073A67B00BDC55C /* FilController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9B3D4012073A67B00BDC55C /* FilController.swift */; };
 		D9B3D4042073A72A00BDC55C /* TabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9B3D4032073A72A00BDC55C /* TabBar.swift */; };
+		D9B3D4062073B64300BDC55C /* Utilisateur.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9B3D4052073B64300BDC55C /* Utilisateur.swift */; };
+		D9D1CF362073C08300630790 /* ImageRonde.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9D1CF352073C08300630790 /* ImageRonde.swift */; };
+		D9D1CF382073C48600630790 /* ExtensionUImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9D1CF372073C48600630790 /* ExtensionUImageView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -45,6 +48,9 @@
 		D9B3D3FF2073A64500BDC55C /* ProfilController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfilController.swift; sourceTree = "<group>"; };
 		D9B3D4012073A67B00BDC55C /* FilController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilController.swift; sourceTree = "<group>"; };
 		D9B3D4032073A72A00BDC55C /* TabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBar.swift; sourceTree = "<group>"; };
+		D9B3D4052073B64300BDC55C /* Utilisateur.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Utilisateur.swift; path = /Users/christophe/Desktop/Booktho/booktho/booktho/Model/Utilisateur.swift; sourceTree = "<absolute>"; };
+		D9D1CF352073C08300630790 /* ImageRonde.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageRonde.swift; sourceTree = "<group>"; };
+		D9D1CF372073C48600630790 /* ExtensionUImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionUImageView.swift; sourceTree = "<group>"; };
 		F68B249569045C48094EE7AD /* Pods_booktho.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_booktho.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -136,6 +142,7 @@
 				D9B3D4032073A72A00BDC55C /* TabBar.swift */,
 				D9B3D4012073A67B00BDC55C /* FilController.swift */,
 				D9B3D3FF2073A64500BDC55C /* ProfilController.swift */,
+				D9D1CF372073C48600630790 /* ExtensionUImageView.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -143,7 +150,9 @@
 		D91DDCD9206E367700FC7B32 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				D9B3D3F6206E6BBA00BDC55C /* Alerte.swift */,
 				D9B3D3EF206E632F00BDC55C /* BoutonBooktho.swift */,
+				D9D1CF352073C08300630790 /* ImageRonde.swift */,
 				D9B3D3F4206E64AE00BDC55C /* LayerExtention.swift */,
 			);
 			path = View;
@@ -152,7 +161,7 @@
 		D91DDCDA206E367F00FC7B32 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				D9B3D3F6206E6BBA00BDC55C /* Alerte.swift */,
+				D9B3D4052073B64300BDC55C /* Utilisateur.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -317,8 +326,11 @@
 				D9B3D3EE206E60DC00BDC55C /* ConnectionViewController.swift in Sources */,
 				D9B3D4022073A67B00BDC55C /* FilController.swift in Sources */,
 				D9B3D3F5206E64AE00BDC55C /* LayerExtention.swift in Sources */,
+				D9D1CF362073C08300630790 /* ImageRonde.swift in Sources */,
 				D9B3D3F3206E63C400BDC55C /* Constantes.swift in Sources */,
 				D91DDCC2206E340F00FC7B32 /* AppDelegate.swift in Sources */,
+				D9D1CF382073C48600630790 /* ExtensionUImageView.swift in Sources */,
+				D9B3D4062073B64300BDC55C /* Utilisateur.swift in Sources */,
 				D9B3D3FE207381DE00BDC55C /* Refs.swift in Sources */,
 				D9B3D4042073A72A00BDC55C /* TabBar.swift in Sources */,
 				D9B3D3F7206E6BBA00BDC55C /* Alerte.swift in Sources */,
