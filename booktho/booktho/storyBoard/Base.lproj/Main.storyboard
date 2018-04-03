@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="OPu-sg-7sr">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Connection View Controller-->
+        <scene sceneID="gpM-D2-da8">
+            <objects>
+                <viewController id="OPu-sg-7sr" customClass="ConnectionViewController" customModule="booktho" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="9Xe-Rv-yZD">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="codabook_logo" translatesAutoresizingMaskIntoConstraints="NO" id="KAg-nE-7J3">
+                                <rect key="frame" x="20" y="166" width="335" height="335"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="KAg-nE-7J3" secondAttribute="height" id="gWB-x6-HfG"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text=" Bienvenue sur Booktho" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="1l6-bS-UZQ">
+                                <rect key="frame" x="16" y="30" width="343" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="mvS-yI-SlV"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Si vous n'avez pas de compte, un vous sera créé automatiquement" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kqk-X3-A4J">
+                                <rect key="frame" x="16" y="587" width="343" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="6Tp-fR-wHT"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Mot de de passe" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="gES-Ut-tWc">
+                                <rect key="frame" x="20" y="150" width="335" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="FPa-DN-dHT"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocorrectionType="no" secureTextEntry="YES"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UUh-yX-FOO" customClass="BoutonBooktho" customModule="booktho" customModuleProvider="target">
+                                <rect key="frame" x="20" y="200" width="335" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="yyI-Qi-RnB"/>
+                                </constraints>
+                                <state key="normal" title="Connexion"/>
+                                <connections>
+                                    <action selector="seConnecterAction:" destination="OPu-sg-7sr" eventType="touchUpInside" id="tC7-oZ-Y8L"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Adresse mail" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="h2x-3q-uPY">
+                                <rect key="frame" x="20" y="100" width="335" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="rXy-LW-cqJ"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocorrectionType="no" keyboardType="emailAddress"/>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" red="0.43137254899999999" green="0.7843137255" blue="0.1176470588" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="h2x-3q-uPY" firstAttribute="leading" secondItem="qGO-1R-QJ2" secondAttribute="leading" constant="20" id="5q3-3L-BLU"/>
+                            <constraint firstItem="1l6-bS-UZQ" firstAttribute="leading" secondItem="qGO-1R-QJ2" secondAttribute="leading" constant="16" id="9jd-X9-M7i"/>
+                            <constraint firstItem="UUh-yX-FOO" firstAttribute="top" secondItem="gES-Ut-tWc" secondAttribute="bottom" constant="20" id="OAM-DK-JgD"/>
+                            <constraint firstItem="gES-Ut-tWc" firstAttribute="leading" secondItem="qGO-1R-QJ2" secondAttribute="leading" constant="20" id="TR4-At-9Iw"/>
+                            <constraint firstItem="qGO-1R-QJ2" firstAttribute="trailing" secondItem="1l6-bS-UZQ" secondAttribute="trailing" constant="16" id="WQr-bm-Zb5"/>
+                            <constraint firstItem="KAg-nE-7J3" firstAttribute="leading" secondItem="qGO-1R-QJ2" secondAttribute="leading" constant="20" id="WZD-kp-ZPS"/>
+                            <constraint firstItem="qGO-1R-QJ2" firstAttribute="bottom" secondItem="kqk-X3-A4J" secondAttribute="bottom" constant="20" id="Wwa-dr-vyt"/>
+                            <constraint firstItem="1l6-bS-UZQ" firstAttribute="top" secondItem="qGO-1R-QJ2" secondAttribute="top" constant="10" id="bK6-0z-0b4"/>
+                            <constraint firstItem="qGO-1R-QJ2" firstAttribute="trailing" secondItem="KAg-nE-7J3" secondAttribute="trailing" constant="20" id="bPq-kc-jjK"/>
+                            <constraint firstItem="KAg-nE-7J3" firstAttribute="centerY" secondItem="9Xe-Rv-yZD" secondAttribute="centerY" id="bfk-ii-G5d"/>
+                            <constraint firstItem="UUh-yX-FOO" firstAttribute="leading" secondItem="qGO-1R-QJ2" secondAttribute="leading" constant="20" id="by1-lW-XIM"/>
+                            <constraint firstItem="qGO-1R-QJ2" firstAttribute="trailing" secondItem="h2x-3q-uPY" secondAttribute="trailing" constant="20" id="cVs-JR-OmS"/>
+                            <constraint firstItem="h2x-3q-uPY" firstAttribute="top" secondItem="1l6-bS-UZQ" secondAttribute="bottom" constant="20" id="lOU-6g-FXS"/>
+                            <constraint firstItem="qGO-1R-QJ2" firstAttribute="trailing" secondItem="UUh-yX-FOO" secondAttribute="trailing" constant="20" id="o8O-ku-Qji"/>
+                            <constraint firstItem="kqk-X3-A4J" firstAttribute="leading" secondItem="qGO-1R-QJ2" secondAttribute="leading" constant="16" id="ocm-6K-o71"/>
+                            <constraint firstItem="qGO-1R-QJ2" firstAttribute="trailing" secondItem="kqk-X3-A4J" secondAttribute="trailing" constant="16" id="sMV-QM-Gkm"/>
+                            <constraint firstItem="qGO-1R-QJ2" firstAttribute="trailing" secondItem="gES-Ut-tWc" secondAttribute="trailing" constant="20" id="u4g-O8-AwF"/>
+                            <constraint firstItem="gES-Ut-tWc" firstAttribute="top" secondItem="h2x-3q-uPY" secondAttribute="bottom" constant="20" id="uoe-Tt-Vfe"/>
+                            <constraint firstItem="gES-Ut-tWc" firstAttribute="top" secondItem="h2x-3q-uPY" secondAttribute="bottom" constant="20" id="zmt-HQ-GVE"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="qGO-1R-QJ2"/>
+                    </view>
+                    <connections>
+                        <outlet property="connectionBouton" destination="UUh-yX-FOO" id="VGW-nI-crY"/>
+                        <outlet property="mailTF" destination="h2x-3q-uPY" id="Sgu-TQ-BGq"/>
+                        <outlet property="mdpTF" destination="gES-Ut-tWc" id="8Dc-Q6-bEW"/>
+                        <outlet property="pasDeCompteLabel" destination="kqk-X3-A4J" id="nDF-xP-006"/>
+                        <outlet property="titreLabel" destination="1l6-bS-UZQ" id="fuX-Ea-Hdg"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="5OH-pI-ker" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="237.59999999999999" y="157.87106446776613"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="codabook_logo" width="482" height="376"/>
+    </resources>
+</document>
