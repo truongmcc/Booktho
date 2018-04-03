@@ -25,9 +25,7 @@ class ConnectionViewController: UIViewController {
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
         if let id = Auth.auth().currentUser?.uid {
-            // Vérifier si utilisateur dans BDD
-            
-            // Passer à l'app
+            verifierUtilisateur(id: id)
         } else {
             cacher(false)
         }
@@ -52,7 +50,6 @@ class ConnectionViewController: UIViewController {
     func completion(_ user: User?, _ error: Error?) {
         if let erreur = error {
             let nsErreur = erreur as NSError
-            // récupérer le code erreur
             if nsErreur.code == 17011 {
                 // Créer un utilisateur
                 Auth.auth().createUser(withEmail: mailTF.text!, password: mdpTF.text!, completion: completion(_:_:))
@@ -61,9 +58,33 @@ class ConnectionViewController: UIViewController {
             }
         }
         if let utilisateur = user {
-            // Vérifier si l'utilisateur est dans la base de données
-            Alerte.montrer.erreur(message: "Utilisateur créé dans auth", controller: self)
+            verifierUtilisateur(id: utilisateur.uid)
         }
+    }
+    
+    func verifierUtilisateur(id: String) {
+        let referenceFirebase = Refs.obtenir.baseUtilisateurs.child(id)
+        referenceFirebase.observe(.value) { (snapshot) in
+            if snapshot.exists() {
+                // le user existe : Passer à l'app
+                print("utilisateur trouvé")
+                // performSegue affiche la tabbarcontroller
+                self.performSegue(withIdentifier: SEGUE_ID, sender: nil)
+            } else {
+                self.finalisation()
+            }
+        }
+    }
+    
+    func finalisation() {
+        Alerte.montrer.alerteTF(titre: FINALISER, message: DERNIER_PAS, array: [PRENOM, NOM], controller: self, completion: {(success) -> (Void) in
+            if let bool = success, bool == true {
+                // passer à l'app
+                
+            } else {
+                self.finalisation()
+            }
+        })
     }
     
     @IBAction func seConnecterAction(_ sender: Any) {

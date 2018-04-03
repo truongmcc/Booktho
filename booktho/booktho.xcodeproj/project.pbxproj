@@ -19,6 +19,10 @@
 		D9B3D3F5206E64AE00BDC55C /* LayerExtention.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9B3D3F4206E64AE00BDC55C /* LayerExtention.swift */; };
 		D9B3D3F7206E6BBA00BDC55C /* Alerte.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9B3D3F6206E6BBA00BDC55C /* Alerte.swift */; };
 		D9B3D3FA206E728900BDC55C /* FirebaseErreur.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9B3D3F9206E728900BDC55C /* FirebaseErreur.swift */; };
+		D9B3D3FE207381DE00BDC55C /* Refs.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9B3D3FD207381DE00BDC55C /* Refs.swift */; };
+		D9B3D4002073A64500BDC55C /* ProfilController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9B3D3FF2073A64500BDC55C /* ProfilController.swift */; };
+		D9B3D4022073A67B00BDC55C /* FilController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9B3D4012073A67B00BDC55C /* FilController.swift */; };
+		D9B3D4042073A72A00BDC55C /* TabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9B3D4032073A72A00BDC55C /* TabBar.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,6 +41,10 @@
 		D9B3D3F4206E64AE00BDC55C /* LayerExtention.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LayerExtention.swift; sourceTree = "<group>"; };
 		D9B3D3F6206E6BBA00BDC55C /* Alerte.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Alerte.swift; sourceTree = "<group>"; };
 		D9B3D3F9206E728900BDC55C /* FirebaseErreur.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FirebaseErreur.swift; sourceTree = "<group>"; };
+		D9B3D3FD207381DE00BDC55C /* Refs.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Refs.swift; sourceTree = "<group>"; };
+		D9B3D3FF2073A64500BDC55C /* ProfilController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfilController.swift; sourceTree = "<group>"; };
+		D9B3D4012073A67B00BDC55C /* FilController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilController.swift; sourceTree = "<group>"; };
+		D9B3D4032073A72A00BDC55C /* TabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBar.swift; sourceTree = "<group>"; };
 		F68B249569045C48094EE7AD /* Pods_booktho.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_booktho.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -90,9 +98,9 @@
 		D91DDCC0206E340F00FC7B32 /* booktho */ = {
 			isa = PBXGroup;
 			children = (
+				D91DDCC1206E340F00FC7B32 /* AppDelegate.swift */,
 				D9B3D3F8206E720700BDC55C /* monFireBase */,
 				D9B3D3F1206E63AB00BDC55C /* Ressources */,
-				D91DDCC1206E340F00FC7B32 /* AppDelegate.swift */,
 				D91DDCDA206E367F00FC7B32 /* Model */,
 				D91DDCD9206E367700FC7B32 /* View */,
 				D91DDCD8206E366F00FC7B32 /* Controller */,
@@ -125,7 +133,9 @@
 			isa = PBXGroup;
 			children = (
 				D9B3D3ED206E60DC00BDC55C /* ConnectionViewController.swift */,
-				D9B3D3F6206E6BBA00BDC55C /* Alerte.swift */,
+				D9B3D4032073A72A00BDC55C /* TabBar.swift */,
+				D9B3D4012073A67B00BDC55C /* FilController.swift */,
+				D9B3D3FF2073A64500BDC55C /* ProfilController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -142,6 +152,7 @@
 		D91DDCDA206E367F00FC7B32 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				D9B3D3F6206E6BBA00BDC55C /* Alerte.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -158,6 +169,7 @@
 			isa = PBXGroup;
 			children = (
 				D9B3D3F9206E728900BDC55C /* FirebaseErreur.swift */,
+				D9B3D3FD207381DE00BDC55C /* Refs.swift */,
 			);
 			path = monFireBase;
 			sourceTree = "<group>";
@@ -301,10 +313,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				D9B3D3FA206E728900BDC55C /* FirebaseErreur.swift in Sources */,
+				D9B3D4002073A64500BDC55C /* ProfilController.swift in Sources */,
 				D9B3D3EE206E60DC00BDC55C /* ConnectionViewController.swift in Sources */,
+				D9B3D4022073A67B00BDC55C /* FilController.swift in Sources */,
 				D9B3D3F5206E64AE00BDC55C /* LayerExtention.swift in Sources */,
 				D9B3D3F3206E63C400BDC55C /* Constantes.swift in Sources */,
 				D91DDCC2206E340F00FC7B32 /* AppDelegate.swift in Sources */,
+				D9B3D3FE207381DE00BDC55C /* Refs.swift in Sources */,
+				D9B3D4042073A72A00BDC55C /* TabBar.swift in Sources */,
 				D9B3D3F7206E6BBA00BDC55C /* Alerte.swift in Sources */,
 				D9B3D3F0206E632F00BDC55C /* BoutonBooktho.swift in Sources */,
 			);
