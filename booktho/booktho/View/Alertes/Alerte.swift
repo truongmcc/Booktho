@@ -15,12 +15,14 @@ typealias Success = (_ bool: Bool?) -> (Void)
 class Alerte {
     static let montrer = Alerte()
     
+    // MARK: Erreur
     func erreur(message: String, controller: UIViewController) {
         let alerte = UIAlertController(title: ERREUR, message: message, preferredStyle: .alert)
         alerte.addAction(UIAlertAction(title: OK, style: .default, handler: nil))
         controller.present(alerte, animated: true, completion: nil)
     }
     
+    // MARK: TextFields
     func alerteTF(titre: String, message: String, array: [String], controller: UIViewController, completion: Success?) {
         guard let id = Auth.auth().currentUser?.uid else {return}
         let alerte = UIAlertController(title: titre, message: message, preferredStyle: .alert)
@@ -56,6 +58,7 @@ class Alerte {
         controller.present(alerte, animated: true, completion: nil)
     }
     
+    // MARK: Déconnexion
     func deco(controller : UIViewController) {
         let alerte = UIAlertController(title: DECO, message: DECO_MESSAGE, preferredStyle: .alert)
         alerte.addAction(UIAlertAction(title: ANNULER, style: .cancel, handler: nil))
@@ -71,6 +74,7 @@ class Alerte {
         controller.present(alerte, animated: true, completion: nil)
     }
     
+    // MARK: Photo
     func photo(imagePicker: UIImagePickerController, controller: UIViewController) {
         let alerte = UIAlertController(title: PRENDRE_PHOTO, message: MEDIA, preferredStyle: .alert)
         let appareil = UIAlertAction(title: APPAREIL, style: .default) { (action) in

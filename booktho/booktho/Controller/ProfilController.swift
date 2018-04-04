@@ -25,7 +25,7 @@ class ProfilController: UIViewController, UIImagePickerControllerDelegate, UINav
         imagePicker.delegate = self
         imagePicker.allowsEditing = true
         photoDeProfil.isUserInteractionEnabled = true
-        photoDeProfil.addGestureRecognizer(UIGestureRecognizer(target: self, action: #selector(prendrePhoto)) )
+        photoDeProfil.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(prendrePhoto)) )
     }
     
     // MARK: Actions
@@ -55,7 +55,7 @@ class ProfilController: UIViewController, UIImagePickerControllerDelegate, UINav
         ref.observe(.value) { (snapshot) in
             print(snapshot)
             if let dict = snapshot.value as? [String:String], let prenom = dict[PRENOM], let nom = dict[NOM] {
-                let nouvelUtilisateur = Utilisateur(prenom: prenom, nom: nom, imageUrl: dict[IMAGE_URL])
+                let nouvelUtilisateur = Utilisateur(id: snapshot.key, prenom: prenom, nom: nom, imageUrl: dict[IMAGE_URL])
                 self.profil = nouvelUtilisateur
                 self.miseAJourDonnees()
             }
@@ -81,7 +81,18 @@ class ProfilController: UIViewController, UIImagePickerControllerDelegate, UINav
         } else if let originale = info[UIImagePickerControllerOriginalImage] as? UIImage {
             image = originale
         }
+        picker.dismiss(animated: true, completion: nil)
         guard image != nil, let data = UIImageJPEGRepresentation(image!, 0.2) else { return }
+        guard let id = Auth.auth().currentUser?.uid else { return }
+        let ref = Refs.obtenir.basePhotoDeProfil.child(id)
+        // PudData va ajouter la photo dans le storage
+        ref.putData(data, metadata: nil) { (metadata, error) in
+            if let urlString = metadata?.downloadURL()?.absoluteString {
+                let userRef = Refs.obtenir.baseUtilisateurs.child(id)
+                userRef.updateChildValues(([IMAGE_URL: urlString]))
+            }
+            
+        }
     }
     
     func imagePickerControllerDidCancel(_ picker: UIImagePickerController) {

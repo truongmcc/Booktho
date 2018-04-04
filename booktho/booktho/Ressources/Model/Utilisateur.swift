@@ -11,6 +11,11 @@ class Utilisateur {
     private var _prenom: String
     private var _nom: String
     private var _imageUrl: String?
+    private var _id: String
+    
+    var id: String {
+        return _id
+    }
     
     var prenom: String {
         return _prenom
@@ -24,7 +29,8 @@ class Utilisateur {
         return _imageUrl
     }
     
-    init (prenom: String, nom: String, imageUrl: String?) {
+    init (id: String, prenom: String, nom: String, imageUrl: String?) {
+        self._id = id
         self._prenom = prenom
         self._nom = nom
         self._imageUrl = imageUrl

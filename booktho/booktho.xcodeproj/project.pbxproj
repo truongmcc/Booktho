@@ -13,6 +13,12 @@
 		D91DDCC9206E340F00FC7B32 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D91DDCC8206E340F00FC7B32 /* Assets.xcassets */; };
 		D91DDCCC206E340F00FC7B32 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D91DDCCA206E340F00FC7B32 /* LaunchScreen.storyboard */; };
 		D91DDCDC206E502C00FC7B32 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = D91DDCDB206E502C00FC7B32 /* GoogleService-Info.plist */; };
+		D9A545C92074CE0D00201BA5 /* VueBooktho.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9A545C82074CE0D00201BA5 /* VueBooktho.swift */; };
+		D9A545CB2074D62300201BA5 /* PostController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9A545CA2074D62300201BA5 /* PostController.swift */; };
+		D9A545CD2075090000201BA5 /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9A545CC2075090000201BA5 /* Post.swift */; };
+		D9A545CF20750DEB00201BA5 /* FilController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9A545CE20750DEB00201BA5 /* FilController.swift */; };
+		D9A545D1207510D900201BA5 /* PostCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9A545D0207510D900201BA5 /* PostCell.swift */; };
+		D9A545D320751C0200201BA5 /* Utilisateur.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9A545D220751C0200201BA5 /* Utilisateur.swift */; };
 		D9B3D3EE206E60DC00BDC55C /* ConnectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9B3D3ED206E60DC00BDC55C /* ConnectionViewController.swift */; };
 		D9B3D3F0206E632F00BDC55C /* BoutonBooktho.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9B3D3EF206E632F00BDC55C /* BoutonBooktho.swift */; };
 		D9B3D3F3206E63C400BDC55C /* Constantes.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9B3D3F2206E63C400BDC55C /* Constantes.swift */; };
@@ -21,9 +27,7 @@
 		D9B3D3FA206E728900BDC55C /* FirebaseErreur.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9B3D3F9206E728900BDC55C /* FirebaseErreur.swift */; };
 		D9B3D3FE207381DE00BDC55C /* Refs.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9B3D3FD207381DE00BDC55C /* Refs.swift */; };
 		D9B3D4002073A64500BDC55C /* ProfilController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9B3D3FF2073A64500BDC55C /* ProfilController.swift */; };
-		D9B3D4022073A67B00BDC55C /* FilController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9B3D4012073A67B00BDC55C /* FilController.swift */; };
 		D9B3D4042073A72A00BDC55C /* TabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9B3D4032073A72A00BDC55C /* TabBar.swift */; };
-		D9B3D4062073B64300BDC55C /* Utilisateur.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9B3D4052073B64300BDC55C /* Utilisateur.swift */; };
 		D9D1CF362073C08300630790 /* ImageRonde.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9D1CF352073C08300630790 /* ImageRonde.swift */; };
 		D9D1CF382073C48600630790 /* ExtensionUImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9D1CF372073C48600630790 /* ExtensionUImageView.swift */; };
 /* End PBXBuildFile section */
@@ -38,6 +42,12 @@
 		D91DDCCB206E340F00FC7B32 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D91DDCCD206E340F00FC7B32 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D91DDCDB206E502C00FC7B32 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		D9A545C82074CE0D00201BA5 /* VueBooktho.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VueBooktho.swift; sourceTree = "<group>"; };
+		D9A545CA2074D62300201BA5 /* PostController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostController.swift; sourceTree = "<group>"; };
+		D9A545CC2075090000201BA5 /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
+		D9A545CE20750DEB00201BA5 /* FilController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FilController.swift; sourceTree = "<group>"; };
+		D9A545D0207510D900201BA5 /* PostCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostCell.swift; sourceTree = "<group>"; };
+		D9A545D220751C0200201BA5 /* Utilisateur.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utilisateur.swift; sourceTree = "<group>"; };
 		D9B3D3ED206E60DC00BDC55C /* ConnectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConnectionViewController.swift; sourceTree = "<group>"; };
 		D9B3D3EF206E632F00BDC55C /* BoutonBooktho.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoutonBooktho.swift; sourceTree = "<group>"; };
 		D9B3D3F2206E63C400BDC55C /* Constantes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constantes.swift; sourceTree = "<group>"; };
@@ -46,9 +56,7 @@
 		D9B3D3F9206E728900BDC55C /* FirebaseErreur.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FirebaseErreur.swift; sourceTree = "<group>"; };
 		D9B3D3FD207381DE00BDC55C /* Refs.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Refs.swift; sourceTree = "<group>"; };
 		D9B3D3FF2073A64500BDC55C /* ProfilController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfilController.swift; sourceTree = "<group>"; };
-		D9B3D4012073A67B00BDC55C /* FilController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilController.swift; sourceTree = "<group>"; };
 		D9B3D4032073A72A00BDC55C /* TabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBar.swift; sourceTree = "<group>"; };
-		D9B3D4052073B64300BDC55C /* Utilisateur.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Utilisateur.swift; path = /Users/christophe/Desktop/Booktho/booktho/booktho/Model/Utilisateur.swift; sourceTree = "<absolute>"; };
 		D9D1CF352073C08300630790 /* ImageRonde.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageRonde.swift; sourceTree = "<group>"; };
 		D9D1CF372073C48600630790 /* ExtensionUImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionUImageView.swift; sourceTree = "<group>"; };
 		F68B249569045C48094EE7AD /* Pods_booktho.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_booktho.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -107,7 +115,6 @@
 				D91DDCC1206E340F00FC7B32 /* AppDelegate.swift */,
 				D9B3D3F8206E720700BDC55C /* monFireBase */,
 				D9B3D3F1206E63AB00BDC55C /* Ressources */,
-				D91DDCDA206E367F00FC7B32 /* Model */,
 				D91DDCD9206E367700FC7B32 /* View */,
 				D91DDCD8206E366F00FC7B32 /* Controller */,
 				D91DDCD7206E365B00FC7B32 /* storyBoard */,
@@ -138,11 +145,12 @@
 		D91DDCD8206E366F00FC7B32 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				D9A545CE20750DEB00201BA5 /* FilController.swift */,
+				D9A545D0207510D900201BA5 /* PostCell.swift */,
 				D9B3D3ED206E60DC00BDC55C /* ConnectionViewController.swift */,
 				D9B3D4032073A72A00BDC55C /* TabBar.swift */,
-				D9B3D4012073A67B00BDC55C /* FilController.swift */,
 				D9B3D3FF2073A64500BDC55C /* ProfilController.swift */,
-				D9D1CF372073C48600630790 /* ExtensionUImageView.swift */,
+				D9A545CA2074D62300201BA5 /* PostController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -150,10 +158,11 @@
 		D91DDCD9206E367700FC7B32 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				D9B3D3F6206E6BBA00BDC55C /* Alerte.swift */,
-				D9B3D3EF206E632F00BDC55C /* BoutonBooktho.swift */,
-				D9D1CF352073C08300630790 /* ImageRonde.swift */,
-				D9B3D3F4206E64AE00BDC55C /* LayerExtention.swift */,
+				D9A545C82074CE0D00201BA5 /* VueBooktho.swift */,
+				D9A545C72074C3B000201BA5 /* Layer */,
+				D9A545C62074C37B00201BA5 /* Boutons */,
+				D9A545C52074C36300201BA5 /* Images */,
+				D9A545C42074C35000201BA5 /* Alertes */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -161,15 +170,51 @@
 		D91DDCDA206E367F00FC7B32 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				D9B3D4052073B64300BDC55C /* Utilisateur.swift */,
+				D9A545D220751C0200201BA5 /* Utilisateur.swift */,
+				D9A545CC2075090000201BA5 /* Post.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		D9A545C42074C35000201BA5 /* Alertes */ = {
+			isa = PBXGroup;
+			children = (
+				D9B3D3F6206E6BBA00BDC55C /* Alerte.swift */,
+			);
+			path = Alertes;
+			sourceTree = "<group>";
+		};
+		D9A545C52074C36300201BA5 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				D9D1CF352073C08300630790 /* ImageRonde.swift */,
+				D9D1CF372073C48600630790 /* ExtensionUImageView.swift */,
+			);
+			path = Images;
+			sourceTree = "<group>";
+		};
+		D9A545C62074C37B00201BA5 /* Boutons */ = {
+			isa = PBXGroup;
+			children = (
+				D9B3D3EF206E632F00BDC55C /* BoutonBooktho.swift */,
+			);
+			name = Boutons;
+			path = ../..;
+			sourceTree = "<group>";
+		};
+		D9A545C72074C3B000201BA5 /* Layer */ = {
+			isa = PBXGroup;
+			children = (
+				D9B3D3F4206E64AE00BDC55C /* LayerExtention.swift */,
+			);
+			path = Layer;
 			sourceTree = "<group>";
 		};
 		D9B3D3F1206E63AB00BDC55C /* Ressources */ = {
 			isa = PBXGroup;
 			children = (
 				D9B3D3F2206E63C400BDC55C /* Constantes.swift */,
+				D91DDCDA206E367F00FC7B32 /* Model */,
 			);
 			path = Ressources;
 			sourceTree = "<group>";
@@ -324,13 +369,17 @@
 				D9B3D3FA206E728900BDC55C /* FirebaseErreur.swift in Sources */,
 				D9B3D4002073A64500BDC55C /* ProfilController.swift in Sources */,
 				D9B3D3EE206E60DC00BDC55C /* ConnectionViewController.swift in Sources */,
-				D9B3D4022073A67B00BDC55C /* FilController.swift in Sources */,
+				D9A545CD2075090000201BA5 /* Post.swift in Sources */,
 				D9B3D3F5206E64AE00BDC55C /* LayerExtention.swift in Sources */,
+				D9A545D1207510D900201BA5 /* PostCell.swift in Sources */,
 				D9D1CF362073C08300630790 /* ImageRonde.swift in Sources */,
 				D9B3D3F3206E63C400BDC55C /* Constantes.swift in Sources */,
 				D91DDCC2206E340F00FC7B32 /* AppDelegate.swift in Sources */,
+				D9A545C92074CE0D00201BA5 /* VueBooktho.swift in Sources */,
+				D9A545CB2074D62300201BA5 /* PostController.swift in Sources */,
+				D9A545D320751C0200201BA5 /* Utilisateur.swift in Sources */,
+				D9A545CF20750DEB00201BA5 /* FilController.swift in Sources */,
 				D9D1CF382073C48600630790 /* ExtensionUImageView.swift in Sources */,
-				D9B3D4062073B64300BDC55C /* Utilisateur.swift in Sources */,
 				D9B3D3FE207381DE00BDC55C /* Refs.swift in Sources */,
 				D9B3D4042073A72A00BDC55C /* TabBar.swift in Sources */,
 				D9B3D3F7206E6BBA00BDC55C /* Alerte.swift in Sources */,

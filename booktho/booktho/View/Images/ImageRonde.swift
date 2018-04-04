@@ -20,6 +20,7 @@ class ImageRonde: UIImageView {
     }
     
     func miseEnPlace() {
+        // forme ronde
         layer.cornerRadius = frame.width / 2
         clipsToBounds = true // pas d'ombre
         contentMode = .scaleAspectFit
