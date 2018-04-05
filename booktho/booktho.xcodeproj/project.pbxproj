@@ -117,6 +117,7 @@
 				D9B3D3F1206E63AB00BDC55C /* Ressources */,
 				D91DDCD9206E367700FC7B32 /* View */,
 				D91DDCD8206E366F00FC7B32 /* Controller */,
+				D9A545D420761BED00201BA5 /* Cells */,
 				D91DDCD7206E365B00FC7B32 /* storyBoard */,
 				D91DDCD6206E365000FC7B32 /* plists */,
 				D91DDCC8206E340F00FC7B32 /* Assets.xcassets */,
@@ -145,11 +146,10 @@
 		D91DDCD8206E366F00FC7B32 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				D9A545CE20750DEB00201BA5 /* FilController.swift */,
-				D9A545D0207510D900201BA5 /* PostCell.swift */,
 				D9B3D3ED206E60DC00BDC55C /* ConnectionViewController.swift */,
 				D9B3D4032073A72A00BDC55C /* TabBar.swift */,
 				D9B3D3FF2073A64500BDC55C /* ProfilController.swift */,
+				D9A545CE20750DEB00201BA5 /* FilController.swift */,
 				D9A545CA2074D62300201BA5 /* PostController.swift */,
 			);
 			path = Controller;
@@ -208,6 +208,14 @@
 				D9B3D3F4206E64AE00BDC55C /* LayerExtention.swift */,
 			);
 			path = Layer;
+			sourceTree = "<group>";
+		};
+		D9A545D420761BED00201BA5 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				D9A545D0207510D900201BA5 /* PostCell.swift */,
+			);
+			path = Cells;
 			sourceTree = "<group>";
 		};
 		D9B3D3F1206E63AB00BDC55C /* Ressources */ = {

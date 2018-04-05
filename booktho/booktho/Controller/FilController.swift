@@ -19,6 +19,7 @@ class FilController: UIViewController, UITableViewDelegate, UITableViewDataSourc
         tableView.delegate = self
         tableView.dataSource = self
         observerPosts()
+        title = FIL
     }
     
     func observerPosts() {
@@ -35,6 +36,7 @@ class FilController: UIViewController, UITableViewDelegate, UITableViewDataSourc
                             if let date = postDict[DATE_POST] as? Double, let texte = postDict[TEXTE] as? String {
                                 let nouveauPost = Post(id: snapshot.key, date: date, texte: texte, imageUrl: postDict[IMAGE_URL] as? String, utilisateur: utilisateur)
                                 self.posts.append(nouveauPost)
+                                self.posts = self.posts.sorted(by: {$0.date > $1.date})
                                 self.tableView.reloadData()
                             }
                         }
@@ -54,5 +56,25 @@ class FilController: UIViewController, UITableViewDelegate, UITableViewDataSourc
             return cell
         }
         return UITableViewCell()
+    }
+    
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        if let cell = tableView.dequeueReusableCell(withIdentifier: CELL_ID) as? PostCell {
+            let post = posts[indexPath.row]
+            var hauteur: CGFloat = 150 // hauteur de base
+            if post.imageUrl != nil {
+                // on veut une image carrée
+                hauteur += cell.imageDuPost.frame.width
+            }
+            // hauteur du texte
+            let taille = CGSize(width: cell.textDuPost.frame.width, height: .greatestFiniteMagnitude)
+            let option = NSStringDrawingOptions.usesFontLeading.union(.usesLineFragmentOrigin)
+            let nsString = NSString(string: post.texte)
+            let hauteurDuTexte = nsString.boundingRect(with: taille, options: option, attributes: [.font: UIFont.systemFont(ofSize: 17)], context: nil).height
+            hauteur += hauteurDuTexte
+            print(hauteur)
+            return hauteur
+        }
+        return 0
     }
 }
